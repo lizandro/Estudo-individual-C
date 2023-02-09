@@ -2,25 +2,31 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Escreva um algoritimo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias
+// Escreva um algoritimo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa 
+// expressa apenas em dias
 // considerar um ano 365 dias e um mes 30 dias.
 
 int main ()
 {
 
-float base, altura, area;
+int anos, meses, dias, TotDias;
 
-setlocale (LC_ALL, "Portuguese"); // não sei pra que funciona essa bagaça, parece que localiza o idioma no terrminal
+setlocale (LC_ALL, "Portuguese"); // localiza o idioma no terrminal
 
-printf("informe o base: ");
-scanf ("%f", &base);  // como a variavel é do tipo float coloca-se %f
+printf("informe o quantos anos: ");
+scanf ("%d", &anos);  // como a variavel é do tipo Inteiro coloca-se %d
 
-printf("informe o altura: ");
-scanf ("%f", &altura);  // como a variavel é do tipo float coloca-se %f
+printf("informe quantidade de meses: ");
+scanf ("%d", &meses);  // como a variavel é do tipo Inteiro coloca-se %d
 
-area = base * altura;
+printf("informe a quantidade de dias: ");
+scanf ("%d", &dias);  // como a variavel é do tipo Inteiro coloca-se %d
 
-printf ("O valor da area e: %.2f\n", area);
+TotDias = anos * 365;
+TotDias = TotDias + (meses * 30);
+TotDias = TotDias + dias;
+
+printf ("O valor em dias e: %d \n", TotDias);
 
 system("pause");
 return 0;

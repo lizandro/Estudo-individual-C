@@ -4,7 +4,7 @@
 
 #include <stdlib.h> 
 
-/* int main(void)
+ int main(void)
 {
     char numeroTelefone[20];
     char mensagem[100];
@@ -27,30 +27,3 @@
     return 0;
 }
 
-int main() 
-{ 
-    // Abre o WhatsApp 
-    system("start /d \"C:\\Users\\Lizandro\\AppData\\Local\\WhatsApp\\WhatsApp.exe\""); 
-  
-    // Espera 10 segundos para dar tempo do WhatsApp abrir 
-    Sleep(10000); 
-  
-    // Envia a mensagem 
-    system("CLICK 736,720"); 
-    system("CLICK 712,336"); 
-    system("STRING +55 11 999999999"); 
-    system("CLICK 712,368"); 
-    system("STRING Mensagem de Exemplo"); 
-    system("CLICK 824,568"); 
-  
-    return 0; 
-}
-*/
-
-int main() 
-{ 
-    // Abre o WhatsApp 
-    system("start /d \"C:\\Program Files\\WhatsApp\\WhatsApp.exe\""); 
-  
-    return 0; 
-}

@@ -19,7 +19,7 @@ scanf ("%f", &altura);  // como a variavel é do tipo float coloca-se %f
 
 area = base * altura;
 
-printf ("O valor da area e: %.2f\n", area);
+printf ("O valor da area e: %.2f\n", area);  // .2 pos queremos considerar duas casas decimais na variavel de tipo float
 
 system("pause");
 return 0;
