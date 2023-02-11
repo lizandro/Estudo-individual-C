@@ -8,9 +8,9 @@
 int main ()
 {
 
-float SalAtual, SalNovo, PercReajuste;
+    setlocale (LC_ALL, "Portuguese") ; // localiza o idioma no terrminal
 
-setlocale (LC_ALL, "Portuguese"); // localiza o idioma no terrminal
+float SalAtual, SalNovo, PercReajuste;
 
 printf("informe o salario atual: ");
 scanf ("%f", &SalAtual);  // como a variavel é do tipo Inteiro coloca-se %f
